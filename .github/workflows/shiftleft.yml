@@ -27,13 +27,13 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        env: 
-          CHKP_CLOUDGUARD_ID: ${{ secrets.CHKP_CLOUDGARD_ID }}
-          CHKP_CLOUDGUARD_SECRET: ${{ secrets.CHKP_CLOUDGUARD_SECRET }}
         run: echo This is my ShiftLeft Lab 
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
+        env: 
+          CHKP_CLOUDGUARD_ID: ${{ secrets.CHKP_CLOUDGARD_ID }}
+          CHKP_CLOUDGUARD_SECRET: ${{ secrets.CHKP_CLOUDGUARD_SECRET }}
         run: |
           chmod +x ./shiftleft
           git clone https://github.com/chkp-wlalgee/demo-app
