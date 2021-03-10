@@ -36,5 +36,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           chmod +x ./shiftleft
-          git clone https://github.com/chkp-rolandop/demo-app
+          git clone https://github.com/chkp-wlalgee/demo-app
           ./shiftleft code-scan -s ./demo-app
